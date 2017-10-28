@@ -1,0 +1,40 @@
+<div role="main">
+    <div class="page-title">
+        <div class="title_left"><h3>{{autorCadastrar.titlePage}}</h3></div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="x_panel">
+                <div class="x_content">
+                    <form class="form-horizontal form-label-left"
+                          name="formCadastrarAutor"
+                          ng-submit="autorCadastrar.salvarAutor(formCadastrarAutor)">
+                        <div class="item form-group">
+                            <label class="control-label col-lg-3 col-md-4 col-sm-4 col-xs-12" for="nome">Nome: <span class="required">*</span>
+                            </label>
+                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                <input type="text" class="form-control " id="nome" name="nome" ng-model="autorCadastrar.autorService.nome" required >
+                            </div>
+                        </div>
+
+                        <div class="item form-group">
+                            <label class="control-label col-lg-3 col-md-4 col-sm-4 col-xs-12" for="notacao">Apelido: <span class="required">*</span>
+                            </label>
+                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                <input type="text" class="form-control" id="notacao" name="notacao" ng-model="autorCadastrar.autorService.notacao" >
+                            </div>
+                        </div>
+
+                        <div class="ln_solid"></div>
+                        <div class="form-group">
+                            <div class="col-md-6 col-md-offset-3">
+                                <a href="#/autor"><button class="btn btn-primary" type="button">Cancelar</button></a>
+                                <button type="submit" class="btn btn-success">Cadastrar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

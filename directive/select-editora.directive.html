@@ -1,0 +1,9 @@
+<ui-select ng-model="vm.editora" ui-select-required>
+    <ui-select-match placeholder="Selecione a editora">
+        <!--<span ng-bind="$item.descricao"></span>-->
+        <spa>{{$select.selected.nome}}</spa>
+    </ui-select-match>
+    <ui-select-choices repeat="item.id as item in (vm.listarEditoras | filter: $select.search)">
+        <span ng-bind="item.nome"></span>
+    </ui-select-choices>
+</ui-select>

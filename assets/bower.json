@@ -1,0 +1,44 @@
+{
+  "name": "Bruno Vasconcellos Augusto",
+  "authors": [
+    "Bruno Augusto <bvaugusto@gmail.com>"
+  ],
+  "description": "Sistema de Getão para Biblioteca",
+  "main": "",
+  "keywords": [
+    "sgb",
+    "SGB",
+    "biblioteca"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.4",
+    "bootstrap": "^3.3.6",
+    "angular": "^1.5.5",
+    "angular-resource": "^1.5.5",
+    "bootstrap-notify": "^0.2.0",
+    "angular-ui-router": "0.3.1",
+    "angular-route": "^1.5.5",
+    "angular-toastr": "^1.7.0",
+    "ngBootbox": "^0.1.3",
+    "angular-datatables": "^0.5.4",
+    "angular-sanitize": "^1.5.5",
+    "angular-loading-bar": "^0.9.0",
+    "ng-file-upload": "^12.0.4",
+    "angular-ui-select": "^0.17.1",
+    "angular-animate": "^1.5.6",
+    "lodash": "^4.13.1",
+    "angular-md5": "^0.1.10",
+    "angular-input-masks": "^2.3.0",
+    "angular-br-filters": "^0.6.0",
+    "ngLocale": "*"
+  }
+}

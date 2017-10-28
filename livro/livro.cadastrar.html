@@ -1,0 +1,79 @@
+<div role="main">
+    <div class="page-title">
+        <div class="title_left"><h3>{{livroCadastrar.titlePage}}</h3></div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="x_panel">
+                <div class="x_content">
+                    <form class="form-horizontal form-label-left"
+                          name="formCadastrarLivro"
+                          ng-submit="livroCadastrar.salvarLivro(formCadastrarLivro)">
+                        <div class="item form-group">
+                            <label class="control-label col-lg-3 col-md-4 col-sm-4 col-xs-12" for="autor">Autor:</label>
+                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                <select-autor id="autor" name="autor" ng-model="livroCadastrar.livroService.autor" required></select-autor>
+                            </div>
+                        </div>
+                        <div class="item form-group">
+                            <label for="editora" class="control-label col-lg-3 col-md-4 col-sm-4 col-xs-12">Editora:</label>
+                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                <select-editora id="editora" name="editora" ng-model="livroCadastrar.livroService.editora" required></select-editora>
+                            </div>
+                        </div>
+                        <div class="item form-group">
+                            <label for="categoria" class="control-label col-lg-3 col-md-4 col-sm-4 col-xs-12">Categoria:</label>
+                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                <select-categoria id="categoria" name="categoria" ng-model="livroCadastrar.livroService.categoria" required></select-categoria>
+                            </div>
+                        </div>
+                        <div class="item form-group">
+                            <label for="isbn" class="control-label col-lg-3 col-md-4 col-sm-4 col-xs-12">ISBN:</label>
+                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                <input type="text" class="form-control" id="isbn" name="isbn" ng-model="livroCadastrar.livroService.isbn"  >
+                            </div>
+                        </div>
+                        <div class="item form-group">
+                            <label for="title" class="control-label col-lg-3 col-md-4 col-sm-4 col-xs-12">Título:</label>
+                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                <input type="text" class="form-control" id="title" name="title" ng-model="livroCadastrar.livroService.title" required >
+                            </div>
+                        </div>
+                        <div class="item form-group">
+                            <label for="subtitulo" class="control-label col-lg-3 col-md-4 col-sm-4 col-xs-12">Subtitulo:</label>
+                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                <input type="text" class="form-control" id="subtitulo" name="subtitulo" ng-model="livroCadastrar.livroService.subtitulo"  >
+                            </div>
+                        </div>
+                        <div class="item form-group">
+                            <label for="descricao" class="control-label col-lg-3 col-md-4 col-sm-4 col-xs-12">Descrição:</label>
+                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                <textarea class="form-control" rows="3" id="descricao" name="descricao" ng-model="livroCadastrar.livroService.descricao" ></textarea>
+                            </div>
+                        </div>
+                        <div class="item form-group">
+
+                            <label for="num_pag" class="control-label col-lg-3 col-md-4 col-sm-4 col-xs-12">N. Páginas:</label>
+                            <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+                                <input type="number" class="form-control" id="num_pag" name="num_pag" ng-model="livroCadastrar.livroService.num_pag"  >
+                            </div>
+
+                            <label for="ano" class="control-label col-lg-1 col-md-1 col-sm-1 col-xs-12">Ano:</label>
+                            <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                                <input type="date" class="form-control" id="ano" name="ano" ng-model="livroCadastrar.livroService.ano" >
+                            </div>
+
+                        </div>
+                        <div class="ln_solid"></div>
+                        <div class="form-group">
+                            <div class="col-md-6 col-md-offset-3">
+                                <a href="#/livro"><button class="btn btn-primary" type="button">Cancelar</button></a>
+                                <button type="submit" class="btn btn-success">Cadastrar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

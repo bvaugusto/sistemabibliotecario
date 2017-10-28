@@ -1,0 +1,21 @@
+<ui-select ng-model="vm.autor" ui-select-required>
+    <ui-select-match placeholder="Selecione o autor">
+        <!--<span ng-bind="$item.descricao"></span>-->
+        <spa>{{$select.selected.nome}}</spa>
+    </ui-select-match>
+    <ui-select-choices repeat="item.id as item in (vm.listarAutores | filter: $select.search)">
+        <span ng-bind="item.nome"></span>
+    </ui-select-choices>
+</ui-select>
+
+
+<!--<ui-select ng-model="vm.fornecedores" theme="selectize" >-->
+<!--<ui-select-match placeholder="Select or search a country in the list...">-->
+<!--&lt;!&ndash;{{$select.selected.descricao}}&ndash;&gt;-->
+<!--<span ng-bind="$country.descricao"></span>-->
+<!--</ui-select-match>-->
+<!--<ui-select-choices repeat="country in (vm.listarFornecedores | filter: $select.search) track by item.id">-->
+<!--<span ng-bind-html="country.descricao "></span>-->
+<!--&lt;!&ndash;<small ng-bind-html="country.descricao"></small>&ndash;&gt;-->
+<!--</ui-select-choices>-->
+<!--</ui-select>-->
