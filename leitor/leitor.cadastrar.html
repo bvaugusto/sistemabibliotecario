@@ -1,0 +1,55 @@
+<div role="main">
+    <div class="page-title">
+        <div class="title_left"><h3>{{leitorCadastrar.titlePage}}</h3></div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="x_panel">
+                <div class="x_content">
+                    <form class="form-horizontal form-label-left"
+                          name="formCadastrarLeitor"
+                          ng-submit="leitorCadastrar.salvarLeitor(formCadastrarLeitor)">
+                        <div class="item form-group">
+                            <label class="control-label col-lg-3 col-md-4 col-sm-4 col-xs-12" for="nome">Nome:</label>
+                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                <input type="text" class="form-control " id="nome" name="nome" ng-model="leitorCadastrar.leitorService.nome" required>
+                            </div>
+                        </div>
+                        <div class="item form-group">
+                            <label for="sobrenome" class="control-label col-lg-3 col-md-4 col-sm-4 col-xs-12">Sobrenome:</label>
+                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                <input type="text" class="form-control " id="sobrenome" name="sobrenome" ng-model="leitorCadastrar.leitorService.sobrenome" required>
+                            </div>
+                        </div>
+                        <div class="item form-group">
+                            <label for="email" class="control-label col-lg-3 col-md-4 col-sm-4 col-xs-12">E-mail:</label>
+                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                <input type="email" class="form-control " id="email" name="email" ng-model="leitorCadastrar.leitorService.email">
+                            </div>
+                        </div>
+                        <div class="item form-group">
+                            <label for="endereco" class="control-label col-lg-3 col-md-4 col-sm-4 col-xs-12">Endereço:</label>
+                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                <input type="text" class="form-control" id="endereco" name="endereco" ng-model="leitorCadastrar.leitorService.endereco"  >
+                            </div>
+                        </div>
+                        <div class="item form-group">
+                            <label for="telefone" class="control-label col-lg-3 col-md-4 col-sm-4 col-xs-12">Telefone:</label>
+                            <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+                                <input type="number" class="form-control" id="telefone" name="telefone" ng-model="leitorCadastrar.leitorService.telefone" required >
+                            </div>
+                        </div>
+
+                        <div class="ln_solid"></div>
+                        <div class="form-group">
+                            <div class="col-md-6 col-md-offset-3">
+                                <a href="#/leitor"><button class="btn btn-primary" type="button">Cancelar</button></a>
+                                <button type="submit" class="btn btn-success">Cadastrar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

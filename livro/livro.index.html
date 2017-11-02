@@ -14,25 +14,23 @@
                     <table id="DataTable" datatable="ng" class="table table-striped responsive-utilities jambo_table">
                         <thead>
                         <tr class="headings">
+                            <th>Autor</th>
+                            <th>Categoria</th>
+                            <th>Editora</th>
                             <th>Titulo</th>
                             <th>Subtitulo</th>
-                            <th>Descrição</th>
                             <th>ISBN</th>
-                            <th>Ano</th>
-                            <th>Exemplares</th>
-                            <th>Disponível(eis)</th>
                             <th width="5%">Ação</th>
                         </tr>
                         </thead>
                         <tbody>
                         <tr ng-repeat="livro in livroIndex.livros">
+                            <td>{{livro.autor_nome}}</td>
+                            <td>{{livro.categoria_nome}}</td>
+                            <td>{{livro.editora_nome}}</td>
                             <td>{{livro.title}}</td>
                             <td>{{livro.subtitulo}}</td>
-                            <td>{{livro.descricao}}</td>
                             <td>{{livro.isbn}}</td>
-                            <td>{{livro.ano}}</td>
-                            <td>{{livro.descricao}}</td>
-                            <td>{{livro.descricao}}</td>
                             <td>
                                 <a href="#/exemplar/{{livro.id}}" title="Exemplar(es)"><span class="glyphicon glyphicon-book" aria-hidden="true"></span></span></a>
                                 |

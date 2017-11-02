@@ -9,5 +9,4 @@ Homestead.json
 .phpintel
 /.project
 /.gitignore
-!/.gitignore
 /assets/bower_components
