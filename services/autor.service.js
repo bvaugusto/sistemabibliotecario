@@ -3,7 +3,7 @@
     angular.module('biblioteca')
         .factory('AutorService', function($resource) {
             return $resource(
-                'http://www.sistemabibliotecarioapi.dev/api/autor/:id',
+                'http://sistemabibliotecarioapi.brunoaugusto.eti.br/api/autor/:id',
                 // { method: 'getTask', q: '*' }, // Query parameters
                 {id: '@id'},
                 {update:{method: 'PUT'}}
@@ -12,7 +12,7 @@
 
     // function AutorService($resource) {
     //     return $resource(
-    //         'http://www.sistemabibliotecarioapi.dev/api/autor/:id',
+    //         'http://sistemabibliotecarioapi.brunoaugusto.eti.br/api/autor/:id',
     //         {
     //             id: '@id'
     //         },

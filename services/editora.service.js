@@ -5,7 +5,7 @@
 
     function EditoraService($resource) {
         return $resource(
-            'http://www.sistemabibliotecarioapi.dev/api/editora/:id',
+            'http://sistemabibliotecarioapi.brunoaugusto.eti.br/api/editora/:id',
             {id: '@id'},
             {update:{method: 'PUT'}}
         );

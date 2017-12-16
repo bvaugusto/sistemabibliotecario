@@ -5,7 +5,7 @@
 
     function LivroService($resource) {
         return $resource(
-            'http://www.sistemabibliotecarioapi.dev/api/livro/:id',
+            'http://sistemabibliotecarioapi.brunoaugusto.eti.br/api/livro/:id',
             {id: '@id'},
             {update:{method: 'PUT'}}
         );

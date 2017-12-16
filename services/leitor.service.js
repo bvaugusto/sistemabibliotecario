@@ -5,7 +5,7 @@
 
     function LeitorService($resource) {
         return $resource(
-            'http://www.sistemabibliotecarioapi.dev/api/leitor/:id',
+            'http://sistemabibliotecarioapi.brunoaugusto.eti.br/api/leitor/:id',
             {id:'@id'},
             {update:{method:'PUT'}}
         );

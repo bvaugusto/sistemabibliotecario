@@ -5,7 +5,7 @@
 
     function CategoriaService($resource) {
         return $resource(
-            'http://www.sistemabibliotecarioapi.dev/api/categoria/:id',
+            'http://sistemabibliotecarioapi.brunoaugusto.eti.br/api/categoria/:id',
             {id: '@id'},
             {update:{method: 'PUT'}}
         );

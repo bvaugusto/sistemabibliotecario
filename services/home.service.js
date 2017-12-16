@@ -5,7 +5,7 @@
 
     function HomeService($resource) {
         return $resource(
-            'http://www.sistemabibliotecarioapi.dev/api/home'
+            'http://sistemabibliotecarioapi.brunoaugusto.eti.br/api/home'
             // {id: '@id'},
             // {
             //     'query':  {method:'GET', isArray:true}
