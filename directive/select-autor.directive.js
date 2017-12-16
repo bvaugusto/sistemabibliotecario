@@ -12,9 +12,11 @@
 
         return {
             restrict: 'E',
-            required: 'ngModel',
+            require: 'ngModel',
             scope: {
-                autor: '=ngModel'
+                ngModel: '=',
+                ngChange: '&',
+                options: '='
             },
             templateUrl: './directive/select-autor.directive.html',
             bindToController: true,
@@ -26,6 +28,5 @@
             var vm = this;
             vm.listarAutores = AutorService.query({sort:'nome'});
         }
-
     }
 })();
